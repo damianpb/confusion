@@ -17,25 +17,6 @@ function RenderDish({ dish }) {
     );
 }
 
-// function RenderComments({ comments }) {
-//     var commentList = comments.map(comment => {
-//         return (
-//             <li key={comment.id} >
-//                 <p>{comment.comment}</p>
-//                 <p>-- {comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(comment.date)))}</p>
-//             </li>
-//         );
-//     });
-//     return (
-//         <div>
-//             <h4>Comments</h4>
-//             <ul className="list-unstyled">
-//                 {commentList}
-//             </ul>
-//         </div>
-//     );
-// }
-
 function RenderComments({ comments }) {
     if (comments != null)
         return (
